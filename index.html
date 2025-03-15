@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online tools for image and PDF processing. Compress, convert, and optimize your files easily.">
+    <meta name="keywords" content="image tools, PDF tools, online tools, image compression, PDF conversion">
+    <meta name="author" content="Your Name">
+    <title>Online Tools - Image & PDF Tools</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        :root {
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --primary-color: #007BFF;
+            --secondary-color: #0056b3;
+            --card-bg: #fff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f0f0f0;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin: 20px 0 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Tool Categories Section */
+        #tools {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #tools h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tool-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .tool-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .tool-card:hover i {
+            transform: scale(1.2);
+            color: var(--secondary-color);
+        }
+
+        .tool-card h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .tool-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            #hero h1 {
+                font-size: 2rem;
+            }
+
+            #hero p {
+                font-size: 1rem;
+            }
+
+            .tool-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Online Tools</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Image Tools</a></li>
+            <li><a href="#">PDF Tools</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Online Tools</h1>
+        <p>Your one-stop solution for image and PDF processing. Compress, convert, and optimize your files easily.</p>
+    </section>
+
+    <!-- Tool Categories Section -->
+    <section id="tools">
+        <h2>Explore Our Tools</h2>
+        <div class="tool-grid">
+            <!-- Image Tools -->
+            <div class="tool-card">
+                <i class="fas fa-image"></i>
+                <h3>Image Compression</h3>
+                <p>Compress your images without losing quality. Perfect for web and storage optimization.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-file-image"></i>
+                <h3>Image Conversion</h3>
+                <p>Convert images between formats like JPG, PNG, GIF, and more.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-crop"></i>
+                <h3>Image Resizing</h3>
+                <p>Resize images to fit your needs. Customize dimensions easily.</p>
+            </div>
+
+            <!-- PDF Tools -->
+            <div class="tool-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>PDF Compression</h3>
+                <p>Reduce the size of your PDF files without compromising quality.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-file-export"></i>
+                <h3>PDF to Image</h3>
+                <p>Convert PDF pages to high-quality images in various formats.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-file-import"></i>
+                <h3>Image to PDF</h3>
+                <p>Convert multiple images into a single PDF file.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Online Tools. All rights reserved.</p>
+    </footer>
+</body>
+</html>
